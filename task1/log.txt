@@ -1,0 +1,11 @@
+commit 1bd804b7a22e70ffb36a75e6f79dd8ffd289dd52 (HEAD -> master)
+Author: vovasokoll <vovasokoll@gmail.com>
+Date:   Mon Feb 12 01:30:19 2018 +0300
+
+    add status.txt
+
+commit 372fc7cdba964b826b568c037e1cef86f0334be4
+Author: vovasokoll <vovasokoll@gmail.com>
+Date:   Mon Feb 12 01:28:52 2018 +0300
+
+    add .gitignore
