@@ -1,106 +1,120 @@
+"use strict"
 ; var main = (function () {
     var photoPosts = [
         {
             id: '1',
-            descriprion: 'Женская сборная Беларуси выиграла эстафету в рамках соревнований по биатлону на Олимпийских играх в Пхёнчхане!!!',
+            description: 'Женская сборная Беларуси выиграла эстафету в рамках соревнований по биатлону на Олимпийских играх в Пхёнчхане!!!',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: 'sidssad',
             photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg',
-            hashTags: ['like', 'lol', 'kek', 'chebyrek']
+            hashTags: ['like', 'lol', 'kek', 'chebyrek'],
+            likes: ['sidssad','kesha']
         }, {
             id: '2',
-            descriprion: 'Lady in Black 🕷',
+            description: 'Lady in Black 🕷',
             createdAt: new Date('2018-02-22T23:00:00'),
             author: 'Иванов',
             photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg',
-            hashTags: ['like', 'lol', 'kek', 'chebyrek']
+            hashTags: ['like', 'lol', 'kek', 'chebyrek'],
+            likes: ['sidssad','kesha']
         }, {
             id: '3',
-            descriprion: 'Подписывайтесь на лучшую страницу про МакГрегора - ',
+            description: 'Подписывайтесь на лучшую страницу про МакГрегора - ',
             createdAt: new Date('2018-02-21T23:00:00'),
             author: 'Иванов Иван',
             photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg',
-            hashTags: ['like', 'lol', 'kek', 'chebyrek']
+            hashTags: ['like', 'lol', 'kek', 'chebyrek'],
+            likes: ['sidssad','kesha']
         }
         , {
             id: '4',
-            descriprion: 'Shop link in bio @packofslime',
+            description: 'Shop link in bio @packofslime',
             createdAt: new Date('2018-02-20T23:00:00'),
             author: 'Иванов Иван',
             photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg',
-            hashTags: ['like', 'lol', 'kek', 'chebyrek']
+            hashTags: ['like', 'lol', 'kek', 'chebyrek'],
+            likes: ['sidssad','kesha']
         }
         , {
             id: '5',
-            descriprion: 'Женская сборная Беларуси выиграла эстафету в рамках соревнований по биатлону на Олимпийских играх в Пхёнчхане!!!',
+            description: 'Женская сборная Беларуси выиграла эстафету в рамках соревнований по биатлону на Олимпийских играх в Пхёнчхане!!!',
             createdAt: new Date('2018-02-19T23:00:00'),
             author: 'Иван',
             photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg',
-            hashTags: ['like', 'lol', 'kek', 'chebyrek']
+            hashTags: ['like', 'lol', 'kek', 'chebyrek'],
+            likes: ['sidssad','kesha']
         }
         , {
             id: '6',
-            descriprion: 'Женская сборная Беларуси выиграла эстафету в рамках соревнований по биатлону на Олимпийских играх в Пхёнчхане!!!',
+            description: 'Женская сборная Беларуси выиграла эстафету в рамках соревнований по биатлону на Олимпийских играх в Пхёнчхане!!!',
             createdAt: new Date('2018-02-18T23:00:00'),
             author: 'Иванов Иван',
             photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg',
-            hashTags: ['like', 'lol', 'kek', 'chebyrek']
+            hashTags: ['like', 'lol', 'kek', 'chebyrek'],
+            likes: ['sidssad','kesha']
         }
         , {
             id: '7',
-            descriprion: 'Второй день European Open Prague🇨🇿',
+            description: 'Второй день European Open Prague🇨🇿',
             createdAt: new Date('2018-02-17T23:00:00'),
             author: 'Иванов Иван',
             photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg',
-            hashTags: ['like', 'lol', 'kek', 'chebyrek']
+            hashTags: ['like', 'lol', 'kek', 'chebyrek'],
+            likes: ['sidssad','kesha']
         }
         , {
             id: '8',
-            descriprion: 'Женская сборная Беларуси выиграла эстафету в рамках соревнований по биатлону на Олимпийских играх в Пхёнчхане!!!',
+            description: 'Женская сборная Беларуси выиграла эстафету в рамках соревнований по биатлону на Олимпийских играх в Пхёнчхане!!!',
             createdAt: new Date('2018-02-16T23:00:00'),
             author: 'sidssad',
             photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg',
-            hashTags: ['like', 'lol', 'kek', 'chebyrek']
+            hashTags: ['like', 'lol', 'kek', 'chebyrek'],
+            likes: ['sidssad','kesha']
         }
         , {
             id: '9',
-            descriprion: 'Свадьбы, корпоративы, дни рождения от перспективного агентства ведущих подрастешка2.0))))) ',
+            description: 'Свадьбы, корпоративы, дни рождения от перспективного агентства ведущих подрастешка2.0))))) ',
             createdAt: new Date('2018-02-15T23:00:00'),
             author: 'sidssad',
             photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg',
-            hashTags: ['like', 'lol', 'kek', 'chebyrek']
+            hashTags: ['like', 'lol', 'kek', 'chebyrek'],
+            likes: ['sidssad','kesha']
         }
         , {
             id: '10',
-            descriprion: 'Тварожнiк з чарнiцамi для цудоýнага настрою❤',
+            description: 'Тварожнiк з чарнiцамi для цудоýнага настрою❤',
             createdAt: new Date('2018-02-14T23:00:00'),
             author: 'sidssad',
             photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg',
-            hashTags: ['like', 'lol', 'kek', 'chebyrek']
+            hashTags: ['like', 'lol', 'kek', 'chebyrek'],
+            likes: ['sidssad','kesha']
         }
         , {
             id: '11',
-            descriprion: 'Тем временем я хожу по стенам',
+            description: 'Тем временем я хожу по стенам',
             createdAt: new Date('2018-02-13T23:00:00'),
             author: 'Иванов Иван',
             photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg',
-            hashTags: ['like', 'lol', 'kek', 'chebyrek']
+            hashTags: ['like', 'lol', 'kek', 'chebyrek'],
+            likes: ['sidssad','kesha']
         }
         , {
             id: '12',
-            descriprion: 'Вы когда-нибудь чувствовали, что не можете ничего сделать? Я недавно ощутила. Опустим даже тот факт, что я не люблю долго ждать результата.',
+            description: 'Вы когда-нибудь чувствовали, что не можете ничего сделать? Я недавно ощутила. Опустим даже тот факт, что я не люблю долго ждать результата.',
             createdAt: new Date('2018-02-12T23:00:00'),
             author: 'sidssad',
             photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg',
-            hashTags: ['like', 'lol', 'chebyrek']
+            hashTags: ['like', 'lol', 'chebyrek'],
+            likes: ['sidssad','kesha']
         }
         , {
             id: '13',
-            descriprion: 'с Пинска! И такое бывает🙄 Душевная и эмоциональная поездка❤😊',
+            description: 'с Пинска! И такое бывает🙄 Душевная и эмоциональная поездка❤😊',
             createdAt: new Date('2018-02-11T23:00:00'),
             author: 'Иванов Иван',
             photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg',
-            hashTags: ['like', 'lol', 'kek', 'chebyrek']
+            hashTags: ['like', 'lol', 'kek', 'chebyrek'],
+            likes: ['sidssad','kesha']
         }
     ];
 
@@ -111,7 +125,7 @@
         filterConfig = filterConfig || {};
         var answerPosts = photoPosts;
         if (filterConfig.author) {
-            answerPosts = answerPosts.filter(item => item['author'] == filterConfig.author);
+            answerPosts = answerPosts.filter(item => item['author'] === filterConfig.author);
         }
         if (filterConfig.hashTags) {
             for (var i = 0; i < filterConfig.hashTags.length; i++) {
@@ -130,26 +144,15 @@
         return element2.createdAt - element1.createdAt;
     }
     function getIndexPhotoPost(id) {
-        for (var i = 0; i < photoPosts.length; i++) {
-            if (photoPosts[i].id == id) {
-                return i;
-            }
-        }
-        return -1;
+        return photoPosts.findIndex((item,i,photoPosts) => item.id === id);;
     }
     function getPhotoPost(id) {
-        var indexPost = getIndexPhotoPost(id);
-        if (index != -1) {
-            return photoPosts[indexPost];
-        }
-        else {
-            return null;
-        }
+        return photoPosts.find((item,i,photoPosts) => item.id === id);
     }
     function removePhotoPost(id) {
-        var indexxPost = getIndexPhotoPost(id);
-        if (index != -1) {
-            photoPosts.splice(index, 1);
+        var indexPost = getIndexPhotoPost(id);
+        if (indexPost !== -1) {
+            photoPosts.splice(indexPost, 1);
             return true;
         }
         else {
@@ -157,54 +160,53 @@
         }
     }
 
-    function validateField(post, field) {
-        var correct = (typeof post[field] === 'string');
-        if (post[field] == undefined) {
-            correct = false;
-        }
-        if (field != 'description' && field != 'hashTags') {
-            correct &= (post[field] != '');
-        }
-        return correct;
-    }
-    function validateDate(post) {
-        if (post['createdAt'] || Object.prototype.toString.call(post['createdAt']) != '[object Date]') {
-            return false;
-        }
-        else {
+    var validator = {
+        id: function (id) {
+            return (typeof id === 'string') && id !== '';
+        },
+        createdAt: function (date) {
+            return date && Object.prototype.toString.call(date) === '[object Date]';
+        },
+        description: function (description) {
             return true;
+            //return (typeof description === 'string');
+        },
+        author: function (author) {
+            return typeof author === 'string' && author !== '';
+        },
+        photoLink: function (photoLink) {
+            return typeof photoLink === 'string' && photoLink !== '';
+        },
+        likes: function (likes) {
+            return Array.isArray(likes);
+        },
+        hashTags: function (hashTags) {
+            return Array.isArray(hashTags);
         }
-    }
-    function validateHashtags(post) {
-        if (!post['hashTags']) {
-            return false;
-        }
-        return true;
     }
     function validatePhotoPost(post) {
+        var fields = Object.keys(validator);
         var correct = true;
-        correct &= validateField(post, 'id');
-        correct &= validateField(post, 'description');
-        correct &= validateField(post, 'author');
-        correct &= validateField(post, 'photoLink');
-        correct &= validateHashtags(post);
-        correct &= validateDate(post);
+        fields.forEach(function (element) {
+            correct &= validator[element](post[element]);
+        });
         return correct;
     }
     function editPhotoPost(id, post) {
         var indexPost = getIndexPhotoPost(id);
-        if (index != -1) {
-            if (post.descriprion) {
-                photoPosts[i].descriprion = post.descriprion;
+        if (indexPost !== -1) {
+            var tempPhotoPost = Object.assign({}, photoPosts[indexPost]);
+            if (validator.description(post.description)) {
+                tempPhotoPost.description = post.description;
             }
-            if (post.photoLink) {
-                photoPosts[i].photoLink = post.photoLink;
+            if (validator.photoLink(post.photoLink)) {
+                tempPhotoPost.photoLink = post.photoLink;
             }
-            if (post.hashTags) {
-                photoPosts[i].hashTags = post.hashTags;
+            if (validator.hashTags(post.hashTags)) {
+                tempPhotoPost.hashTags = post.hashTags;
             }
-            if (validatePhotoPost(photoPosts[i])) {
-                photoPosts.splice(indexPost, 1, post);
+            if (validatePhotoPost(tempPhotoPost)) {
+                photoPosts[indexPost] = Object.assign({},tempPhotoPost); //??????????
                 return true;
             }
             else {
@@ -223,7 +225,9 @@
         return false;
     }
     return {
+        getIndexPhotoPost:getIndexPhotoPost,
         getPhotoPosts: getPhotoPosts,
+        getPhotoPost: getPhotoPost,
         validatePhotoPost: validatePhotoPost,
         addPhotoPost: addPhotoPost,
         editPhotoPost: editPhotoPost,
