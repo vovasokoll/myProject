@@ -20,22 +20,82 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-element">Welcome,
-            <div class="authorized-username">sidssad</div> !
+<header>
+    <div class="header-element" id="name-user">Welcome,
+        <div class="authorized-username"></div>
+        !
+    </div>
+    <div class="header-element">
+        <a class="logo" href="">
+            <img src="images/bigmen.png" title="BrIGht MomENts" height="45px">
+        </a>
+    </div>
+    <button class="button-sigin">Sigin</button>
+    <div class="header-element">
+        <button href="" class="button-exit">Exit :(</button>
+    </div>
+</header>
+<main>
+
+    <div class="lenta" id="lenta">
+    </div>
+
+    <div class="filter">
+            <p><strong>Filters:</strong>
+            </p>
+            <input type="text" class="by-name" list="name-list" id="filt-input-name" placeholder="Enter the name">
+            <datalist id="name-list"></datalist>
+            <input type="text" class="by-hashtag" list="by-hashtag" placeholder="Enter the #hashtag">
+            <datalist id="by-hashtag"></datalist>
+            <input type="date" class="by-date-since" id="by-date-since"placeholder="Since time">
+            <input type="date" class="by-date-to" id="by-date-to" placeholder="To time">
+            <button class="material-icons button-find">seach</button>
+            <button class="material-icons button-add" title="Add photo post">add</button>
+    </div>
+</main>
+<button class="button-load-more">Load more</button>
+<footer>
+    <div class="footer-block university">
+        <p>BSU,2 course,7 group</p>
+    </div>
+    <div class="footer-block date-create">
+        <p><strong>BIGMEN<br> February 25,2018</strong></p>
+    </div>
+    <div class="footer-block author-name">
+        Sokolovich Vladzimir <br> vovasokoll@gmail.com
+    </div>
+</footer>
+<template id="photo_temp">
+    <div class="post">
+        <div class="profile">
+            <div class="username" title="Author photo">
+            </div>
+            <button class="material-icons button-edit" title="Edit photo">mode_edit</button>
+            <button class="material-icons button-delete" title="Delete photo">cancel</button>
         </div>
-        <div class="header-element">
-            <a class="logo" href="">
-                <img src = "images/bigmen.png" title = "BrIGht MomENts" height="45px">
-            </a>
+        <div class="tag" title="Hashtag photo">
+            <p></p>
         </div>
-        <div class="header-element">
-            <button href="" class="button-exit">Exit :(</button>
+        <div class="photo">
+            <img class="image-photo" src="images/women.jpg">
         </div>
-    </header>
-    <main>
-        <div class="lenta">
-            <div class="post">
+        <div class="panel">
+            <div class="panel-button">
+                <button class="material-icons button-like">favorite_border</button>
+                <div class="panel-number-like" title="Number of likes">66</div>
+            </div>
+            <div class="panel-date-upload" title="Date of photo upload">
+            </div>
+        </div>
+        <div class="comment">
+        </div>
+        <button class="material-icons button-more-comment" title="More comment">more</button>
+    </div>
+</template>
+</body>
+<script src="script.js"></script>
+</html>
+<!--            <div class="post">
                 <div class="profile">
                     <div class="username" title="Author photo">
                         _ivanurgant
@@ -267,31 +327,4 @@
                 </div>
                 <button class="material-icons button-more-comment" title="More comment">more</button>
             </div>
-        </div>
-        <div class="filter">
-            <p><strong>Filters:</strong>
-            </p>
-            <input type="text" class="by-name" placeholder="Enter the name">
-            <input type="text" class="by-hashtag" placeholder="Enter the #hashtag">
-            <input type="date" class="by-date-since" placeholder="Since time">
-            <input type="date" class="by-date-to" placeholder="To time">
-            <button class="material-icons button-find">seach</button>
-            <button class="material-icons button-add" title="Add photo post">add</button>
-        </div>
-    </main>
-    <button class="button-load-more">Load more</button>
-    <footer>
-        <div class="footer-block university">
-            <p>BSU,2 course,7 group</p>
-        </div>
-        <div class="footer-block date-create">
-            <p><strong>BIGMEN<br> February 25,2018</strong></p>
-        </div>
-        <div class="footer-block author-name">
-            Sokolovich Vladzimir <br> vovasokoll@gmail.com
-        </div>
-    </footer>
-<script src="script.js"></script>
-</body>
-
-</html>
+-->
